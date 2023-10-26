@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <img src="./images/logo.png" alt="my image" height="130" width="115" />
+      <h1>Car Dealership</h1>
+      <br />
+      <h3>The Best Place To Find Quality Used Cars</h3>
+    </div>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">
+        Show all
+      </button>
+      <button class="btn" onclick="filterSelection('OldYear')">
+        2014-2017
+      </button>
+      <button class="btn" onclick="filterSelection('NewYear')">
+        2018-2020
+      </button>
+      <button class="btn" onclick="filterSelection('OverMileage')">
+        Over 30000 Mileage
+      </button>
+      <button class="btn" onclick="filterSelection('UnderMileage')">
+        Under 3000 Mileage
+      </button>
+      <button class="btn" onclick="filterSelection('HighPrice')">
+        $30000-$68000
+      </button>
+      <button class="btn" onclick="filterSelection('LowPrice')">
+        $12000-$30000
+      </button>
+      <button class="btn" onclick="filterSelection('black')">Black</button>
+      <button class="btn" onclick="filterSelection('white')">White</button>
+      <button class="btn" onclick="filterSelection('blue')">Blue</button>
+      <button class="btn" onclick="filterSelection('red')">Red</button>
+      <button class="btn" onclick="filterSelection('green')">Green</button>
+      <button class="btn" onclick="filterSelection('silver')">Silver</button>
+      <button class="btn" onclick="filterSelection('gray')">Gray</button>
+      <button class="btn" onclick="filterSelection('make')">Toyota</button>
+      <button class="btn" onclick="filterSelection('make2')">Honda</button>
+      <button class="btn" onclick="filterSelection('make3')">Ford</button>
+      <button class="btn" onclick="filterSelection('make4')">Nissan</button>
+      <button class="btn" onclick="filterSelection('make5')">Chevrolet</button>
+      <button class="btn" onclick="filterSelection('make6')">Volkswagen</button>
+      <button class="btn" onclick="filterSelection('make7')">Hyundai</button>
+      <button class="btn" onclick="filterSelection('make8')">Subaru</button>
+      <button class="btn" onclick="filterSelection('make9')">Mazda</button>
+      <button class="btn" onclick="filterSelection('make10')">Kia</button>
+      <button class="btn" onclick="filterSelection('make11')">Dodge</button>
+      <button class="btn" onclick="filterSelection('make12')">Cadillac</button>
+      <button class="btn" onclick="filterSelection('make13')">Jaguar</button>
+      <button class="btn" onclick="filterSelection('make14')">Tesla</button>
+      <button class="btn" onclick="filterSelection('make15')">Porshe</button>
+      <button class="btn" onclick="filterSelection('make16')">Lexus</button>
+      <button class="btn" onclick="filterSelection('make17')">BMW</button>
+    </div>
+
+    <div class="container">
+      <div class="filterDiv NewYear OverMileage LowPrice silver make">
+        <img
+          src="./images/Camry,toyota.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2018</p>
+        <p>Toyota</p>
+        <p>Camry</p>
+        <p>mileage: 30000</p>
+        <p>price: 18000</p>
+        <p>Silver</p>
+        <p>25 mpg city, 35 mpg highway</p>
+      </div>
+      <div class="filterDiv OldYear OverMileage LowPrice white make2">
+        <img
+          src="./images/civic,honda.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2016</p>
+        <p>Honda</p>
+        <p>Civic</p>
+        <p>mileage: 45000</p>
+        <p>price: 14000</p>
+        <p>White</p>
+        <p>30 mpg city, 40 mpg highway</p>
+      </div>
+      <div class="filterDiv OldYear OverMileage LowPrice black make3">
+        <img
+          src="./images/fusion,ford.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2017</p>
+        <p>Ford</p>
+        <p>Fusion</p>
+        <p>mileage: 35000</p>
+        <p>price: 16000</p>
+        <p>Black</p>
+        <p>28 mpg city, 38 mpg highway</p>
+      </div>
+      <div class="filterDiv NewYear UnderMileage LowPrice blue make4">
+        <img
+          src="./images/altima,nissan.jpg"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2019</p>
+        <p>Nissan</p>
+        <p>Altima</p>
+        <p>mileage: 25000</p>
+        <p>price: 17000</p>
+        <p>Blue</p>
+        <p>27 mpg city, 36 mpg highway</p>
+      </div>
+      <div class="filterDiv OldYear OverMileage LowPrice red make5">
+        <img
+          src="./images/malibu,chevrolet.jpg"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2015</p>
+        <p>Chevrolet</p>
+        <p>Malibu</p>
+        <p>mileage: 50000</p>
+        <p>price: 12000</p>
+        <p>Red</p>
+        <p>25 mpg city, 37 mpg highway</p>
+      </div>
+      <div class="filterDiv OldYear OverMileage LowPrice gray make6">
+        <img
+          src="./images/passat,volkswagon.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2016</p>
+        <p>Volkswagen</p>
+        <p>Passat</p>
+        <p>mileage: 40000</p>
+        <p>price: 15000</p>
+        <p>Gray</p>
+        <p>29 mpg city, 40 mpg highway</p>
+      </div>
+      <div class="filterDiv NewYear UnderMileage LowPrice silver make7">
+        <img
+          src="./images/elantra, hyundai.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2020</p>
+        <p>Hyundai</p>
+        <p>Elantra</p>
+        <p>mileage: 22000</p>
+        <p>price: 16000</p>
+        <p>Silver</p>
+        <p>30 mpg city, 41 mpg highway</p>
+      </div>
+      <div class="filterDiv OldYear OverMileage LowPrice green make8">
+        <img
+          src="./images/outback,subaru.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2014</p>
+        <p>Subaru</p>
+        <p>Outback</p>
+        <p>mileage: 60000</p>
+        <p>price: 14000</p>
+        <p>Green</p>
+        <p>22 mpg city, 30 mpg highway</p>
+      </div>
+      <div class="filterDiv OldYear OverMileage LowPrice blue make9">
+        <img
+          src="./images/cx5, mazda.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2017</p>
+        <p>Mazda</p>
+        <p>CX-5</p>
+        <p>mileage: 32000</p>
+        <p>price: 19000</p>
+        <p>Blue</p>
+        <p>24 mpg city, 31 mpg highway</p>
+      </div>
+      <div class="filterDiv NewYear UnderMileage LowPrice white make10">
+        <img
+          src="./images/sorrento,kia.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2018</p>
+        <p>Kia</p>
+        <p>Sorento</p>
+        <p>mileage: 28000</p>
+        <p>price: 17000</p>
+        <p>White</p>
+        <p>22 mpg city, 29 mpg highway</p>
+      </div>
+      <div class="filterDiv OldYear OverMileage LowPrice black make11">
+        <img
+          src="./images/challenger,dodge.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2015</p>
+        <p>Dodge</p>
+        <p>Challenger</p>
+        <p>mileage: 30000</p>
+        <p>price: 24000</p>
+        <p>Black</p>
+        <p>19 mpg city, 30 mpg highway</p>
+      </div>
+      <div class="filterDiv OldYear UnderMileage HighPrice red make12">
+        <img
+          src="./images/XT5, cadillac.jpg"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2017</p>
+        <p>Cadillac</p>
+        <p>XT5</p>
+        <p>mileage: 28000</p>
+        <p>price: 32000</p>
+        <p>Red</p>
+        <p>19 mpg city, 27 mpg highway</p>
+      </div>
+      <div class="filterDiv NewYear UnderMileage HighPrice blue make13">
+        <img
+          src="./images/F-pace,jaguar.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2018</p>
+        <p>Jaguar</p>
+        <p>F-PACE</p>
+        <p>mileage: 26000</p>
+        <p>price: 38000</p>
+        <p>Blue</p>
+        <p>18 mpg city, 23 mpg highway</p>
+      </div>
+      <div class="filterDiv NewYear UnderMileage HighPrice black make14">
+        <img
+          src="./images/modelS,tesla.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2019</p>
+        <p>Tesla</p>
+        <p>Model S</p>
+        <p>mileage: 18000</p>
+        <p>price: 55000</p>
+        <p>Black</p>
+        <p>Electric 370 miles per charge</p>
+      </div>
+      <div class="filterDiv NewYear UnderMileage HighPrice white make15">
+        <img
+          src="./images/cayenne,porsche.webp"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2020</p>
+        <p>Porsche</p>
+        <p>Cayenne</p>
+        <p>mileage: 22000</p>
+        <p>price: 68000</p>
+        <p>White</p>
+        <p>20 mpg city, 26 mpg highway</p>
+      </div>
+      <div class="filterDiv OldYear UnderMileage LowPrice white make16">
+        <img
+          src="./images/ES, lexus.jpg"
+          alt="image"
+          width="150"
+          height="100"
+        />
+        <p>2017</p>
+        <p>Lexus</p>
+        <p>ES</p>
+        <p>mileage: 29000</p>
+        <p>price: 26000</p>
+        <p>White</p>
+        <p>21 mpg city, 30 mpg highway</p>
+      </div>
+      <div class="filterDiv OldYear OverMileage LowPrice black make17">
+        <img src="./images/5,BMW.webp" alt="image" width="150" height="100" />
+        <p>2016</p>
+        <p>BMW</p>
+        <p>5 Series</p>
+        <p>mileage: 32000</p>
+        <p>price: 27000</p>
+        <p>Black</p>
+        <p>23 mpg city, 34 mpg highway</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h1>Contact Us</h1>
+      <aside>
+        <p>Phone: 222-222-222</p>
+        <p>Email: Cars@gmail.com</p>
+      </aside>
+    </div>
+  </body>
+</html>
